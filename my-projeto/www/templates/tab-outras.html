@@ -1,0 +1,10 @@
+<ion-view view-title="OUTRAS CATEGORIAS">
+  <ion-content>
+    <div class="list">
+    <a class="item item-thumbnail-left"  ng-repeat="p in postings" ng-if="p.category!='CA00000021'&& p.category!='CA00000003'" ng-click="showDetail(p)">
+       <img src="{{p.path}}">
+      <h2>{{p.title}}</h2>
+      <p>{{p.description}}</p>
+    </a>
+</div>    
+</ion-view>

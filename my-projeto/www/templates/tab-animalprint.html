@@ -1,0 +1,13 @@
+<ion-view view-title="ANIMAL PRINT">
+  <ion-content >
+    <ion-list>
+      <div class="list">
+    <a class="item item-thumbnail-left" ng-repeat="p in postings | filter:'CA00000003'" ng-click="showDetail(p)">
+       <img src="{{p.path}}">
+      <h2>{{p.title}}</h2>
+      <p>{{p.description}}</p>
+    </a>
+</div>      
+    </ion-list>
+  </ion-content>
+</ion-view>
